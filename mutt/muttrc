@@ -1,0 +1,63 @@
+# -*-muttrc-*-
+
+set folder = ~/.mail
+set alias_file = ~/.mutt/alias
+set header_cache = ~/.mutt/cache/headers
+set message_cachedir = ~/.mutt/cache/bodies
+set certificate_file = ~/.mutt/certificates
+set mailcap_path = ~/.mutt/mailcap
+set tmpdir = ~/.mutt/tmp
+set signature = ~/.mutt/sig
+
+source ~/.mutt/crypto
+source ~/.mutt/theme
+
+set wait_key = no
+set mbox_type = Maildir
+set timeout = 3
+set mail_check = 0
+
+set sort = threads
+set sort_aux = reverse-last-date-received
+set uncollapse_jump
+set sort_re
+
+#
+# sidebar settings -- need mutt-sidebar in AUR
+#
+set sidebar_visible = yes
+set sidebar_delim = '|'
+set sidebar_width = 15
+set sidebar_shortpath = yes
+macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
+macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+#
+# pager settings
+#
+set pager_index_lines = 10
+set pager_context = 3
+set pager_stop
+set menu_scroll
+set tilde
+
+#
+# IMAP settings
+#
+set imap_keepalive = 300
+unset imap_passive
+set mail_check = 60
+set mbox_type = Maildir
+
+#
+# compose settings
+#
+set edit_headers
+set include
+set forward_quote
+
+# load in private settings
+source ~/.mutt/muttrc.private

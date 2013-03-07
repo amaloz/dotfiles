@@ -23,4 +23,3 @@ alias skype='xhost +local: && su skype -c /usr/bin/skype'
 
 export GOPATH="$HOME/prog/go"
 export PATH="/usr/lib/colorgcc/bin:$PATH"
-
