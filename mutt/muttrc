@@ -23,6 +23,12 @@ set uncollapse_jump
 set sort_re
 
 #
+# alias settings
+#
+# set sort_alias = alias
+# source $alias_file
+
+#
 # sidebar settings -- need mutt-sidebar in AUR
 #
 set sidebar_visible = yes
