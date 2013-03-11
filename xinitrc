@@ -36,5 +36,4 @@ xautolock -time 15 -locker slock &
 setxkbmap -option ctrl:nocaps &
 emacs --daemon &
 mpd &
-eval $(gpg-agent --daemon) &
 exec awesome

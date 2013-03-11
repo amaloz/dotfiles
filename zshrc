@@ -1,4 +1,8 @@
-# -*- zshrc -*-
+# -*- shell-script -*-
+
+CASE_SENSITIVE=true
+COMPLETION_WAITING_DOTS=true
+HIST_IGNORE_SPACE=true
 
 # antigen
 source $HOME/prog/dotfiles/antigen/antigen.zsh
@@ -6,15 +10,11 @@ antigen-lib
 antigen-bundle archlinux
 antigen-bundle command-not-found
 antigen-bundle git
+antigen-bundle gpg-agent
 antigen-bundle svn
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-theme robbyrussell
 antigen-apply
-
-# oh-my-zsh settings
-CASE_SENSITIVE="true"
-COMPLETION_WAITING_DOTS="true"
-HIST_IGNORE_SPACE="true"
 
 # source in private stuff
 source $HOME/.zshrc.private 2> /dev/null
