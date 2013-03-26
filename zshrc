@@ -28,5 +28,7 @@ alias vi="$EDITOR"
 alias vim="$EDITOR"
 alias skype='xhost +local: && su skype -c /usr/bin/skype'
 
+alias grep='grep --color=always'
+
 export GOPATH="$HOME/prog/go"
 export PATH="/usr/lib/colorgcc/bin:$PATH"
