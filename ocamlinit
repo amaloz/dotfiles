@@ -8,6 +8,5 @@
 #require "fieldslib.syntax"
 #require "comparelib.syntax"
 #require "core"
-(* #require "async" *)
-(* #require "core_extended" *)
 #require "core.top"
+#require "ocamlgraph"
