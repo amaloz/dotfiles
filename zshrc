@@ -32,3 +32,9 @@ alias grep='grep --color=always'
 
 export GOPATH="$HOME/prog/go"
 export PATH="/usr/lib/colorgcc/bin:$PATH"
+
+# OPAM configuration
+. /home/amaloz/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
+
+# mpc completion
+. /usr/share/doc/mpc/mpc-completion.bash || true
