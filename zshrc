@@ -14,6 +14,9 @@ HIST_IGNORE_SPACE=true
 source $ZSH/oh-my-zsh.sh
 source $ZSHDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# disable autocorrect
+unsetopt correctall
+
 # source in private stuff
 source $HOME/.zshrc.private 2> /dev/null
 
