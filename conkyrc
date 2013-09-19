@@ -1,5 +1,5 @@
-alignment bottom_middle
-background no
+alignment bottom_left
+background yes
 border_width 1
 cpu_avg_samples 2
 default_color 222222
@@ -12,8 +12,6 @@ use_xft yes
 xftfont Bitstream Vera Sans Mono-7
 gap_x 5
 gap_y 0
-minimum_size 1260 6
-maximum_width 1260
 net_avg_samples 2
 no_buffers yes
 out_to_console no
@@ -36,14 +34,12 @@ color2 98c2c7
 
 TEXT
 ${if_mpd_playing}
-${alignc} \
 ${color2}Artist: ${color1}${mpd_artist} \
 ${color2}Title: ${color1}${mpd_title} \
 ${color2}Album: ${color1}${mpd_album} \
 ${color2}${mpd_status} ${color1}${mpd_bar 5,50}\
 ${endif}
-${alignc} \
-${color2}wlan0 [${color2}Up:${color1} ${upspeed wlan0} ${color2} - Down:${color1} ${downspeed wlan0}${color2}] \
+${color2}eth0 [${color2}Up:${color1} ${upspeed eth0} ${color2} - Down:${color1} ${downspeed eth0}${color2}] \
 ${color2}Battery: ${color1}${battery} \
 ${color2}CPU: ${color1}${cpu cpu0}% ${cpubar 5,50} \
 ${color2}RAM: ${color1}${memperc}% ${membar 5,50} \
