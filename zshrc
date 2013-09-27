@@ -1,6 +1,6 @@
 # -*- shell-script -*-
 
-ZSHDIR=$HOME/prog/dotfiles
+ZSHDIR=$HOME/prog/github/dotfiles
 
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=robbyrussell
