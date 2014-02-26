@@ -35,3 +35,7 @@ export PATH="/usr/lib/colorgcc/bin:$PATH"
 
 # mpc completion
 . /usr/share/doc/mpc/mpc-completion.bash || true
+
+# fancy less (need lesspipe and pygmentize)
+export LESSOPEN="|lesspipe.sh %s"
+export LESSCOLORIZER=pygmentize
