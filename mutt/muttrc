@@ -33,8 +33,8 @@ set sort_re
 #
 set sidebar_visible = yes
 set sidebar_delim = '|'
-set sidebar_width = 20
-set sidebar_shortpath = yes
+set sidebar_width = 10
+set sidebar_shortpath = no
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 bind index,pager \CP sidebar-prev
