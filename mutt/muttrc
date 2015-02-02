@@ -7,9 +7,9 @@ set message_cachedir = ~/.mutt/cache/bodies
 set certificate_file = ~/.mutt/certificates
 set mailcap_path = ~/.mutt/mailcap
 set tmpdir = ~/.mutt/tmp
-set signature = ~/.mutt/sig
+# set signature = ~/.mutt/sig
 
-source ~/.mutt/crypto
+# source ~/.mutt/crypto
 source ~/.mutt/theme
 
 set wait_key = no
@@ -34,7 +34,7 @@ set sort_re
 set sidebar_visible = yes
 set sidebar_delim = '|'
 set sidebar_width = 10
-set sidebar_shortpath = no
+# set sidebar_shortpath = no
 macro index b '<enter-command>toggle sidebar_visible<enter><refresh>'
 macro pager b '<enter-command>toggle sidebar_visible<enter><redraw-screen>'
 bind index,pager \CP sidebar-prev

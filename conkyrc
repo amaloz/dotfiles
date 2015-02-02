@@ -39,7 +39,7 @@ ${color2}Title: ${color1}${mpd_title} \
 ${color2}Album: ${color1}${mpd_album} \
 ${color2}${mpd_status} ${color1}${mpd_bar 5,50}\
 ${endif}
-${color2}eth0 [${color2}Up:${color1} ${upspeed eth0} ${color2} - Down:${color1} ${downspeed eth0}${color2}] \
+${color2}wlan0 [${color2}Up:${color1} ${upspeed eth0} ${color2} - Down:${color1} ${downspeed eth0}${color2}] \
 ${color2}Battery: ${color1}${battery} \
 ${color2}CPU: ${color1}${cpu cpu0}% ${cpubar 5,50} \
 ${color2}RAM: ${color1}${memperc}% ${membar 5,50} \

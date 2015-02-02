@@ -12,8 +12,8 @@ fi
 [ -f "$userprofile" ] && source "$userprofile"
 
 xautolock -time 15 -locker slock &
-setxkbmap -option ctrl:nocaps &
-emacs --daemon &
-conky &
-mpd &
+setxkbmap -option ctrl:nocaps
+emacs --daemon
+conky
+mpd
 exec awesome
