@@ -15,5 +15,6 @@ xautolock -time 15 -locker slock &
 setxkbmap -option ctrl:nocaps
 emacs --daemon
 conky
+pulseaudio --start
 mpd
 exec awesome
