@@ -37,5 +37,7 @@ eval `dircolors $HOME/.dir_colors`
 # fancy less (need lesspipe and pygmentize)
 export LESSOPEN="| pygmentize -O bg=dark -g %s"
 
+alias lest='less -L'
+
 # OPAM configuration
 . $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
