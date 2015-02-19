@@ -16,5 +16,5 @@ setxkbmap -option ctrl:nocaps
 emacs --daemon
 conky
 pulseaudio --start
-mpd
+[ ! -s ~/.config/mpd/pid ] && mpd
 exec awesome
