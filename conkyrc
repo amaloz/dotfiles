@@ -33,15 +33,17 @@ color1 FFFFFF
 color2 98c2c7
 
 TEXT
-${if_mpd_playing}
+${color2}wlp5s0 [${color2}Up:${color1}${upspeed wlp5s0}${color2} - Down:${color1}${downspeed wlp5s0}${color2}] \
+${color2}CPU: ${color1}\
+${cpu cpu0}% ${cpubar cpu0 5,25} ${cpu cpu1}% ${cpubar cpu1 5,25} \
+${cpu cpu2}% ${cpubar cpu2 5,25} ${cpu cpu3}% ${cpubar cpu3 5,25}  \
+${color2}RAM: ${color1}\
+${memperc}% ${membar 5,50}  \
+${color2}/: ${color1}\
+${fs_used_perc /}% ${fs_used /} ${fs_bar 5,50 /} \
+${if_mpd_playing} \
 ${color2}Artist: ${color1}${mpd_artist} \
 ${color2}Title: ${color1}${mpd_title} \
 ${color2}Album: ${color1}${mpd_album} \
 ${color2}${mpd_status} ${color1}${mpd_bar 5,50}\
 ${endif}
-${color2}wlan0 [${color2}Up:${color1} ${upspeed eth0} ${color2} - Down:${color1} ${downspeed eth0}${color2}] \
-${color2}Battery: ${color1}${battery} \
-${color2}CPU: ${color1}${cpu cpu0}% ${cpubar 5,50} \
-${color2}RAM: ${color1}${memperc}% ${membar 5,50} \
-${color2}/: ${color1}${fs_used_perc /}% ${fs_used /} ${fs_bar 5,50 /} \
-${color2}/home: ${color1}${fs_used_perc /home}% ${fs_used /home} ${fs_bar 5,50 /home} \
