@@ -14,7 +14,8 @@ fi
 xautolock -time 15 -locker slock &
 setxkbmap -option ctrl:nocaps
 emacs --daemon
-conky
+# conky
 pulseaudio --start
-[ ! -s ~/.config/mpd/pid ] && mpd
+xmodmap ~/.Xmodmap
+# [ ! -s ~/.config/mpd/pid ] && mpd
 exec awesome

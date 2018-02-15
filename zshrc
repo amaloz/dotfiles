@@ -1,6 +1,6 @@
 # -*- shell-script -*-
 
-ZSHDIR=$HOME/prog/github/dotfiles
+ZSHDIR=$HOME/prog/mine/dotfiles
 ZSH=$ZSHDIR/oh-my-zsh
 
 ZSH_THEME=robbyrussell
@@ -17,20 +17,14 @@ source $ZSHDIR/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # disable autocorrect
 unsetopt correctall
 
-# source in private stuff
-source $HOME/.zshrc.private 2> /dev/null
-
 # other settings
 export EDITOR='emacsclient -t'
 export SVN_EDITOR="$EDITOR"
 
 alias pdf='mupdf'
 alias vi="$EDITOR"
-alias vim="$EDITOR"
 
 alias grep='grep --color=always'
-
-export PATH="/usr/lib/colorgcc/bin:$PATH"
 
 eval `dircolors $HOME/.dir_colors`
 
@@ -38,6 +32,3 @@ eval `dircolors $HOME/.dir_colors`
 export LESSOPEN="| pygmentize -O bg=dark -g %s"
 
 alias lest='less -L'
-
-# OPAM configuration
-. $HOME/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true
